@@ -9,9 +9,9 @@ const Product = ({ id, product_image, detail, productname, price, stock }) => {
         <img src={product_image} alt="" className="product-image" />
       </div>
       <div className="text-center p-2"> {productname}</div>
-      <div className="text-center p-2">
-        Offer Price-{price}{" "}
-        <del className="px-2">{parseInt(price + price * 0.1)}</del>
+      <div className="text-center p-2">Offer Price-{price}</div>
+      <div className="text-center">
+        Orignal Price<del className="px-2">{price + price * 0.1}</del>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="row m-3 d-flex align-items-center justify-content-between p-0">
+    <div className="row  d-flex align-items-center justify-content-between p-0 header-position">
       <div className="col-md-4">
         <h3>
           <span className="bg-danger text-white logo-bg p-2">
