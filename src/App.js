@@ -7,16 +7,17 @@ import Carousel from "./component/Carousel";
 import Product from "./Pages/Product";
 import SideBarFilter from "./component/SideBarFilter";
 import ProductComponent from "./component/ProductComponent";
+import CartComponent from "./component/CartComponent";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="container-fluid p-0">
         <Header />
-        <Carousel />
+        {/* <Carousel /> */}
         <div className="p-3">
-         
-          <ProductComponent />
+          {/* <ProductComponent /> */}
+          <CartComponent />
         </div>
         <Footer />
       </div>

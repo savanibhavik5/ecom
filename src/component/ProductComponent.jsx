@@ -15,7 +15,7 @@ const ProductComponent = () => {
   };
   useEffect(() => {
     getProduct();
-  });
+  }, []);
   return (
     <Fragment>
       <div className="row m-2">
@@ -34,6 +34,7 @@ const ProductComponent = () => {
                   stock={product?.stock}
                   detail={product?.detail}
                   product_image={product?.product_image}
+                  product={product}
                 />
               );
             })}
