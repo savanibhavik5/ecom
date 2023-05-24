@@ -43,12 +43,12 @@ const Header = () => {
         <ul className="navbar-nav mr-auto ">
           <li className="nav-item active">
             <Link className="nav-link" to="/">
-              Home <span className="sr-only">fyhyt</span>
+              Home <span className="sr-only"></span>
             </Link>
           </li>
 
           <li className="nav-item dropdown">
-            <a
+            <Link to="/men" 
               className="nav-link active dropdown-toggle"
               href="#"
               id="navbarDropdown"
@@ -57,8 +57,8 @@ const Header = () => {
               aria-haspopup="true"
             >
               Men
-            </a>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+            </Link>
+            {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <Link className="dropdown-item" to="/men">
                 All Collection's
               </Link>
@@ -80,7 +80,7 @@ const Header = () => {
               <a className="dropdown-item" href="#">
                 Perfume
               </a>
-            </div>
+            </div> */}
           </li>
           <li className="nav-item dropdown">
             <Link
@@ -95,7 +95,7 @@ const Header = () => {
             >
               Women
             </Link>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+            {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="#">
                 Sarree's
               </a>
@@ -114,7 +114,7 @@ const Header = () => {
               <a className="dropdown-item" href="#">
                 Make-up
               </a>
-            </div>
+            </div> */}
           </li>
           <li className="nav-item dropdown">
             <Link
@@ -129,7 +129,7 @@ const Header = () => {
             >
               Baby Collection
             </Link>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+            {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="#">
                 T-Shirt's
               </a>
@@ -145,7 +145,7 @@ const Header = () => {
               <a className="dropdown-item" href="#">
                 Baby Lotion
               </a>
-            </div>
+            </div> */}
           </li>
           <li className="nav-item active">
             <a className="nav-link" href="#">

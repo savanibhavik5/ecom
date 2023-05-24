@@ -16,16 +16,15 @@ function App() {
     <BrowserRouter>
       <div className="container-fluid p-0">
         <Header />
-       
-        <div className="p-3">
+
+        <div className="p-3 scroll-behavier">
           <Routes>
             <Route exact path="/" element={<ProductComponent />} />
-            <Route exact path="/cart" element={<CartComponent />} />
+            <Route exact path="cart" element={<CartComponent />} />
             <Route exact path="/men" element={<Men />} />
             <Route exact path="/women" element={<Women />} />
             <Route exact path="/baby" element={<Baby />} />
           </Routes>
-         
         </div>
         <Footer />
       </div>

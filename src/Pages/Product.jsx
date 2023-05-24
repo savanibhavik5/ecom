@@ -16,7 +16,7 @@ const Product = ({ product }) => {
   };
 
   return (
-    <div className="col-lg-4 col-md-6 p-5">
+    <div className="col-lg-4 col-md-6 p-5 ">
       <div className="image-container">
         <img src={product_image} alt="" className="product-image" />
       </div>
