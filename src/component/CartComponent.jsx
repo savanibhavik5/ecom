@@ -47,6 +47,7 @@ const CartComponent = () => {
   }, []);
   return (
     <div className="container ">
+    
       {cartdata.length === 0 ? (
         <div className="row m-5">
           <h1 className="text-center mt-5">Your Cart is Empty</h1>

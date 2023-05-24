@@ -16,8 +16,12 @@ function App() {
         <Header />
         {/* <Carousel /> */}
         <div className="p-3">
+          <Routes>
+            <Route exact path="/" element={<ProductComponent />} />
+            <Route exact path="/cart" element={<CartComponent />} />
+          </Routes>
           {/* <ProductComponent /> */}
-          <CartComponent />
+          {/* <CartComponent /> */}
         </div>
         <Footer />
       </div>

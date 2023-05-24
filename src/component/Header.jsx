@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [cart, setCart] = useState([]);
@@ -38,13 +39,12 @@ const Header = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div className="collapse navbar-collapse  " id="navbarSupportedContent"
-      >
+      <div className="collapse navbar-collapse  " id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto ">
           <li className="nav-item active">
-            <a className="nav-link" href="#">
-              Home <span className="sr-only"></span>
-            </a>
+            <Link className="nav-link" to="/">
+              Home <span className="sr-only">fyhyt</span>
+            </Link>
           </li>
 
           <li className="nav-item dropdown">
@@ -156,14 +156,19 @@ const Header = () => {
         </ul>
         {/* <form className=" my-2 my-lg-0"> */}
         <div className="d-flex justify-content-end align-items-center p-2">
-          <i className="fa fa-user header-icon mx-2"></i>
-          <div className="d-flex justify-content-end align-items-center">
+          <Link to="/useraccount" className="nav-link p-0">
+            <i className="fa fa-user header-icon mx-2"></i>
+          </Link>
+          <Link
+            to="/cart"
+            className="nav-link d-flex justify-content-end p-0 align-items-center"
+          >
             <i className="fa-solid fa-cart-shopping header-icon mx-2"></i>
             <div className="bg-danger cart-length rounded-circle">
               {/* {cart.length} */}
               {cart.length}
             </div>
-          </div>
+          </Link>
         </div>
         {/* </form> */}
       </div>

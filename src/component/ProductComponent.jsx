@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import Product from "../Pages/Product";
 import SideBarFilter from "../component/SideBarFilter";
+import Carousel from "./Carousel";
 
 const ProductComponent = () => {
   let [products, setProducts] = useState([]);
@@ -18,6 +19,7 @@ const ProductComponent = () => {
   }, []);
   return (
     <Fragment>
+      <Carousel />
       <div className="row m-2">
         <div className="col-md-3">
           <SideBarFilter />
