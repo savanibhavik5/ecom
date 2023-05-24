@@ -21,8 +21,8 @@ const Cart = ({
 
   return (
     <tr className="text-center  m-2">
-      <td className="col p-2">{index + 1} </td>
-      <td className="col p-2 ">
+      <td className="col-md-1 p-2">{index + 1} </td>
+      <td className="col-md-2 p-2 ">
         <img
           src={product_image}
           heigth={80}
@@ -31,12 +31,12 @@ const Cart = ({
           className="p-2"
         />
       </td>
-      <td className="col p-2">{productname} </td>
-      <td className="col p-2">{totalprice} </td>
-      <td className="col p-2 text-center">
-        <div className="input-group align-items-center p-2">
+      <td className="col-md-2 p-2">{productname} </td>
+      <td className="col-md-2 p-2">{totalprice} </td>
+      <td className="col-md-3 p-2 ">
+        <div className="input-group d-flex justify-content-center p-2">
           <button
-            className="px-1 btn text-center btn-info item-button"
+            className="px-1 btn  btn-info item-button"
             disabled={quantity <= 1}
             onClick={removeQuantity}
           >
@@ -54,7 +54,7 @@ const Cart = ({
           </button>
         </div>
       </td>
-      <td className="col">
+      <td className="col-md-2">
         <button className="btn btn-danger" onClick={delitem}>
           Remove
         </button>

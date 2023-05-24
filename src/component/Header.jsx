@@ -21,10 +21,12 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="#">
         <h3>
-          <span className="bg-danger text-white logo-bg p-2">
-            <i className="fa-solid fa-shop fa-fade"></i>
-          </span>
-          Capital Shop
+          <Link className="nav-link" to="/">
+            <span className="bg-danger text-white logo-bg p-2">
+              <i className="fa-solid fa-shop fa-fade"></i>
+            </span>
+            Capital Shop
+          </Link>
         </h3>
       </a>
       <button
@@ -48,7 +50,8 @@ const Header = () => {
           </li>
 
           <li className="nav-item dropdown">
-            <Link to="/men" 
+            <Link
+              to="/men"
               className="nav-link active dropdown-toggle"
               href="#"
               id="navbarDropdown"
