@@ -3,7 +3,6 @@ import "./App.css";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import Carousel from "./component/Carousel";
 import Product from "./Pages/Product";
 import SideBarFilter from "./component/Filter";
 import ProductComponent from "./component/ProductComponent";
@@ -17,7 +16,7 @@ function App() {
     <BrowserRouter>
       <div className="container-fluid p-0">
         <Header />
-        {/* <Carousel /> */}
+       
         <div className="p-3">
           <Routes>
             <Route exact path="/" element={<ProductComponent />} />
@@ -26,8 +25,7 @@ function App() {
             <Route exact path="/women" element={<Women />} />
             <Route exact path="/baby" element={<Baby />} />
           </Routes>
-          {/* <ProductComponent /> */}
-          {/* <CartComponent /> */}
+         
         </div>
         <Footer />
       </div>

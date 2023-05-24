@@ -1,14 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Filter from "../component/Filter";
 import axios from "axios";
 
 const Men = () => {
-    let [menitem, setMenItem] = useState([]);
+  let [menitem, setMenItem] = useState([]);
 
-    const getMenItem = () => {
-        const res =axios.get()
-    }
-    
+  const getMenItem = async () => {
+    const res = await axios.get(`http://localhost:1234/men?/allcollection?/shirt?/`);
+    const data = await res.data;
+    console.log(data);
+    setMenItem(data);
+  };
+    // console.log("112255", menitem);
+  useEffect(() => {
+    getMenItem();
+  }, []);
 
   return (
     <div className="row m-2">
@@ -17,6 +23,7 @@ const Men = () => {
       </div>
       <div className="col-md-9 ">
         <div className="row">
+         
           <div className="col-lg-4 col-md-6 col-6 p-3">
             <div className="image-container">
               <img
