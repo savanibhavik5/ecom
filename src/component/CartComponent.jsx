@@ -52,10 +52,20 @@ const CartComponent = () => {
           <h1 className="text-center mt-5">Your Cart is Empty</h1>
         </div>
       ) : (
-        <div className="row m-5">
+        <div className="row m-2">
           <div className="col-md-9">
-            <div className="">
-              <div className="">
+            <table className="table-responsive">
+              <thead>
+                <tr className="text-center">
+                  <th>SrNo</th>
+                  <th>Product Image</th>
+                  <th>Name</th>
+                  <th>Total Price</th>
+                  <th>Quantity</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody className="">
                 {cartdata.map((item, index) => {
                   total = total + item.totalprice;
                   totalitem = totalitem + item.quantity;
@@ -71,8 +81,8 @@ const CartComponent = () => {
                     />
                   );
                 })}
-              </div>
-            </div>
+              </tbody>
+            </table>
           </div>
           <div className="col-md-3  border-left">
             <h3>Cart Summary</h3>

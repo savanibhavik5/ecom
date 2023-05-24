@@ -20,27 +20,29 @@ const Cart = ({
   } = cartitem;
 
   return (
-    <div className="text-center d-flex m-4">
-      <div className="col-md-1">{index + 1} </div>
-      <div className="col-md-3">
-        <img src={product_image} heigth={80} width={80} alt="" />
-      </div>
-      <div className="col-md-2">{productname} </div>
-      <div className="col-md-2">{totalprice} </div>
-      <div className="col-md-2">
-        <div className="input-group ">
+    <tr className="text-center  m-2">
+      <td className="col p-2">{index + 1} </td>
+      <td className="col p-2 ">
+        <img
+          src={product_image}
+          heigth={80}
+          width={80}
+          alt=""
+          className="p-2"
+        />
+      </td>
+      <td className="col p-2">{productname} </td>
+      <td className="col p-2">{totalprice} </td>
+      <td className="col p-2 text-center">
+        <div className="input-group align-items-center p-2">
           <button
-            className="px-1 btn btn-info item-button"
+            className="px-1 btn text-center btn-info item-button"
             disabled={quantity <= 1}
             onClick={removeQuantity}
           >
             -
           </button>
-          <button
-            type="text"
-            className="btn btn-info text-center px-1"
-            readOnly
-          >
+          <button type="text" className="btn  text-center  px-1" readOnly>
             {quantity}
           </button>
           <button
@@ -51,13 +53,13 @@ const Cart = ({
             +
           </button>
         </div>
-      </div>
-      <div className="col-md-2">
+      </td>
+      <td className="col">
         <button className="btn btn-danger" onClick={delitem}>
           Remove
         </button>
-      </div>
-    </div>
+      </td>
+    </tr>
   );
 };
 

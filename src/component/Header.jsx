@@ -38,7 +38,8 @@ const Header = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div className="collapse navbar-collapse  " id="navbarSupportedContent">
+      <div className="collapse navbar-collapse  " id="navbarSupportedContent"
+      >
         <ul className="navbar-nav mr-auto ">
           <li className="nav-item active">
             <a className="nav-link" href="#">
@@ -59,15 +60,23 @@ const Header = () => {
               Men
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item " href="#">
-                Action
+              <a className="dropdown-item" href="#">
+                Shirt's
               </a>
               <a className="dropdown-item" href="#">
-                Another action
+                T-Shirt's
               </a>
-              <div className="dropdown-divider"></div>
               <a className="dropdown-item" href="#">
-                Something else here
+                Jeans
+              </a>
+              <a className="dropdown-item" href="#">
+                Shoe's
+              </a>
+              <a className="dropdown-item" href="#">
+                Wallet & Belt
+              </a>
+              <a className="dropdown-item" href="#">
+                Perfume
               </a>
             </div>
           </li>
@@ -85,14 +94,22 @@ const Header = () => {
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="#">
-                Action
+                Sarree's
               </a>
               <a className="dropdown-item" href="#">
-                Another action
+                Top's
               </a>
-              <div className="dropdown-divider"></div>
               <a className="dropdown-item" href="#">
-                Something else here
+                Jeans
+              </a>
+              <a className="dropdown-item" href="#">
+                Shoe's
+              </a>
+              <a className="dropdown-item" href="#">
+                Purse
+              </a>
+              <a className="dropdown-item" href="#">
+                Make-up
               </a>
             </div>
           </li>
@@ -110,14 +127,19 @@ const Header = () => {
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="#">
-                Action
+                T-Shirt's
               </a>
               <a className="dropdown-item" href="#">
-                Another action
+                Diaper's
               </a>
-              <div className="dropdown-divider"></div>
               <a className="dropdown-item" href="#">
-                Something else here
+                Clothe's
+              </a>
+              <a className="dropdown-item" href="#">
+                Shorts
+              </a>
+              <a className="dropdown-item" href="#">
+                Baby Lotion
               </a>
             </div>
           </li>
