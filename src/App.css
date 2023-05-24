@@ -46,7 +46,3 @@ hr {
 .item-button {
   border: none !important;
 }
-.scroll-behavier{
-  overflow-y: scroll;
-  height: 100vh;
-}

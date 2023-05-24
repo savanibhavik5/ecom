@@ -17,7 +17,7 @@ function App() {
       <div className="container-fluid p-0">
         <Header />
 
-        <div className="p-3 scroll-behavier">
+        <div className="p-3">
           <Routes>
             <Route exact path="/" element={<ProductComponent />} />
             <Route exact path="cart" element={<CartComponent />} />
