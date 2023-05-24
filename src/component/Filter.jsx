@@ -1,6 +1,6 @@
 import React from "react";
 
-const SideBarFilter = () => {
+const Filter = () => {
   return (
     <div className="row border  m-2">
       <div className=" my-3">
@@ -48,7 +48,12 @@ const SideBarFilter = () => {
         <h6 htmlFor="">Filter By Brand</h6>
 
         <div className="form-check">
-          <input className="form-check-input" type="checkbox" value="" id="Denim" />
+          <input
+            className="form-check-input"
+            type="checkbox"
+            value=""
+            id="Denim"
+          />
           <label className="form-check-label" htmlFor="Denim">
             Denim
           </label>
@@ -113,4 +118,4 @@ const SideBarFilter = () => {
   );
 };
 
-export default SideBarFilter;
+export default Filter;

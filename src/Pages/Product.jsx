@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SideBarFilter from "../component/SideBarFilter";
+import SideBarFilter from "../component/Filter";
 import ProductComponent from "../component/ProductComponent";
 import axios from "axios";
 

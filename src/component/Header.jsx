@@ -55,11 +55,13 @@ const Header = () => {
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
-              // aria-expanded="false"
             >
               Men
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <Link className="dropdown-item" to="/men">
+                All Collection's
+              </Link>
               <a className="dropdown-item" href="#">
                 Shirt's
               </a>
@@ -81,7 +83,8 @@ const Header = () => {
             </div>
           </li>
           <li className="nav-item dropdown">
-            <a
+            <Link
+              to="/women"
               className="nav-link dropdown-toggle active"
               href="#"
               id="navbarDropdown"
@@ -91,7 +94,7 @@ const Header = () => {
               aria-expanded="false"
             >
               Women
-            </a>
+            </Link>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="#">
                 Sarree's
@@ -114,7 +117,8 @@ const Header = () => {
             </div>
           </li>
           <li className="nav-item dropdown">
-            <a
+            <Link
+              to="/baby"
               className="nav-link dropdown-toggle active"
               href="#"
               id="navbarDropdown"
@@ -124,7 +128,7 @@ const Header = () => {
               // aria-expanded="false"
             >
               Baby Collection
-            </a>
+            </Link>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="#">
                 T-Shirt's
