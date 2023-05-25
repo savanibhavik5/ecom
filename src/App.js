@@ -18,7 +18,7 @@ function App() {
       <div className="container-fluid p-0">
         <Header />
 
-        <div className="">
+        <div>
           <Routes>
             <Route exact path="/" element={<ProductComponent />} />
             <Route exact path="cart" element={<CartComponent />} />
