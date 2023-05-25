@@ -18,11 +18,7 @@ const Product = ({ product }) => {
 
   return (
     <div className="col-lg-4 col-md-6 p-1 ">
-      <Link
-        to={`/singleproduct/${id}`}
-       
-        className="nav-link"
-      >
+      <Link to={`/singleproduct/${id}`} className="nav-link">
         <div className="image-container mx-2 ">
           <img src={product_image} alt="" className="product-image" />
         </div>

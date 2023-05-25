@@ -50,7 +50,7 @@ const Header = () => {
           </li>
 
           <li className="nav-item dropdown">
-            <Link
+            <div
               to="/men"
               className="nav-link active dropdown-toggle"
               href="#"
@@ -60,12 +60,12 @@ const Header = () => {
               aria-haspopup="true"
             >
               Men
-            </Link>
-            {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+            </div>
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <Link className="dropdown-item" to="/men">
                 All Collection's
               </Link>
-              <a className="dropdown-item" href="#">
+              {/* <a className="dropdown-item" href="#">
                 Shirt's
               </a>
               <a className="dropdown-item" href="#">
@@ -82,12 +82,11 @@ const Header = () => {
               </a>
               <a className="dropdown-item" href="#">
                 Perfume
-              </a>
-            </div> */}
+              </a> */}
+            </div>
           </li>
           <li className="nav-item dropdown">
-            <Link
-              to="/women"
+            <div
               className="nav-link dropdown-toggle active"
               href="#"
               id="navbarDropdown"
@@ -97,9 +96,12 @@ const Header = () => {
               aria-expanded="false"
             >
               Women
-            </Link>
-            {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="#">
+            </div>
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <Link className="dropdown-item" to="/women">
+                All Collection's
+              </Link>
+              {/* <a className="dropdown-item" href="#">
                 Sarree's
               </a>
               <a className="dropdown-item" href="#">
@@ -116,24 +118,25 @@ const Header = () => {
               </a>
               <a className="dropdown-item" href="#">
                 Make-up
-              </a>
-            </div> */}
+              </a> */}
+            </div>
           </li>
           <li className="nav-item dropdown">
-            <Link
-              to="/baby"
+            <div
               className="nav-link dropdown-toggle active"
               href="#"
               id="navbarDropdown"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
-              // aria-expanded="false"
             >
               Baby Collection
-            </Link>
-            {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="#">
+            </div>
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <Link className="dropdown-item" to="/baby">
+                All Collection's
+              </Link>
+              {/* <a className="dropdown-item" href="#">
                 T-Shirt's
               </a>
               <a className="dropdown-item" href="#">
@@ -147,8 +150,8 @@ const Header = () => {
               </a>
               <a className="dropdown-item" href="#">
                 Baby Lotion
-              </a>
-            </div> */}
+              </a> */}
+            </div>
           </li>
           <li className="nav-item active">
             <a className="nav-link" href="#">

@@ -60,3 +60,7 @@ hr {
     align-items: center;
   }
 }
+.single-image {
+  height: 80% !important;
+  width: 100%;
+}
