@@ -10,6 +10,7 @@ import CartComponent from "./component/CartComponent";
 import Men from "./Pages/Men";
 import Baby from "./Pages/Baby";
 import Women from "./Pages/Women";
+import Singleproduct from "./Pages/Singleproduct";
 
 function App() {
   return (
@@ -17,13 +18,18 @@ function App() {
       <div className="container-fluid p-0">
         <Header />
 
-        <div className="p-3">
+        <div className="">
           <Routes>
             <Route exact path="/" element={<ProductComponent />} />
             <Route exact path="cart" element={<CartComponent />} />
             <Route exact path="/men" element={<Men />} />
             <Route exact path="/women" element={<Women />} />
             <Route exact path="/baby" element={<Baby />} />
+            <Route
+              exact
+              path="/singleproduct/:id"
+              element={<Singleproduct />}
+            />
           </Routes>
         </div>
         <Footer />

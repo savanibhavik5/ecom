@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import SideBarFilter from "../component/Filter";
 import ProductComponent from "../component/ProductComponent";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
   const { id, product_image, detail, productname, price, stock } = product;
@@ -16,15 +17,21 @@ const Product = ({ product }) => {
   };
 
   return (
-    <div className="col-lg-4 col-md-6 p-3 ">
-      <div className="image-container">
-        <img src={product_image} alt="" className="product-image" />
-      </div>
-      <div className="text-center p-2"> {productname}</div>
-      <div className="text-center p-2">Offer Price-{price}</div>
-      <div className="text-center">
-        Orignal Price<del className="px-2">{price + price * 0.1}</del>
-      </div>
+    <div className="col-lg-4 col-md-6 p-1 ">
+      <Link
+        to={`/singleproduct/${id}`}
+       
+        className="nav-link"
+      >
+        <div className="image-container mx-2 ">
+          <img src={product_image} alt="" className="product-image" />
+        </div>
+        <div className="text-center p-2"> {productname}</div>
+        <div className="text-center p-2">Offer Price-{price}</div>
+        <div className="text-center">
+          Orignal Price<del className="px-2">{price + price * 0.1}</del>
+        </div>
+      </Link>
       <div className="text-center">
         <button
           className="btn btn-outline-danger m-2"

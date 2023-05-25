@@ -20,10 +20,6 @@ hr {
   height: 2px;
   background-color: white !important;
 }
-.product-image {
-  width: 100%;
-  height: 250px !important;
-}
 
 .image-container {
   align-items: center;
@@ -45,4 +41,22 @@ hr {
 }
 .item-button {
   border: none !important;
+}
+
+@media screen and (max-width: 991.99px) {
+  .product-image {
+    width: 250px;
+    height: 250px !important;
+    margin: 15px !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .product-image {
+    width: 240px !important;
+    height: 248px !important;
+  }
+  .carousel_div {
+    height: 80vh;
+    align-items: center;
+  }
 }

@@ -3,10 +3,12 @@ import axios from "axios";
 import Product from "../Pages/Product";
 import Filter from "./Filter";
 import Carousel from "./Carousel";
+import { Link, useParams } from "react-router-dom";
+import Singleproduct from "../Pages/Singleproduct";
 
 const ProductComponent = () => {
   let [products, setProducts] = useState([]);
-
+ 
   const getProduct = () => {
     fetch("http://localhost:1234/product")
       .then((res) => res.json())
@@ -28,16 +30,18 @@ const ProductComponent = () => {
           <div className="row">
             {products?.map((product) => {
               return (
-                <Product
-                  key={product?.id}
-                  id={product?.id}
-                  productname={product?.productname}
-                  price={product?.price}
-                  stock={product?.stock}
-                  detail={product?.detail}
-                  product_image={product?.product_image}
-                  product={product}
-                />
+          
+                  <Product
+                    key={product?.id}
+                    id={product?.id}
+                    productname={product?.productname}
+                    price={product?.price}
+                    stock={product?.stock}
+                    detail={product?.detail}
+                    product_image={product?.product_image}
+                    product={product}
+                  />
+              
               );
             })}
           </div>

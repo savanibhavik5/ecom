@@ -19,16 +19,16 @@ const Header = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
+      <Link className="navbar-brand" to="/">
         <h3>
-          <Link className="nav-link" to="/">
+          <div className="nav-link">
             <span className="bg-danger text-white logo-bg p-2">
               <i className="fa-solid fa-shop fa-fade"></i>
             </span>
             Capital Shop
-          </Link>
+          </div>
         </h3>
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"

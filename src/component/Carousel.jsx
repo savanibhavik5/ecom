@@ -5,7 +5,7 @@ const Carousel_Img = () => {
   return (
     <div
       id="carouselExampleIndicators"
-      className="carousel slide "
+      className="carousel slide pb-2"
       data-ride="carousel"
     >
       <ol className="carousel-indicators">
